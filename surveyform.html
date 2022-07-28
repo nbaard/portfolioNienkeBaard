@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Do you like cats? form questionnaire</title>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width-device-width, initial-scale="1.0" ><meta>
+    <link rel="stylesheet" type="text/css" href="1styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Do you like Cats?<h1>
+    <p id="description">In this form, you will be answering multiple answers on which we will determine how much you love cats.</p>
+    <form id="survey-form"> 
+
+      <fieldset>
+        <!--<div class="info-tag">Your personal information</div>-->
+        <label id="name-label">Name:
+          <input id="name" type="text" placeholder="Input your full name" required name="name"/>
+        </label>
+        <label id="email-label">Email:
+          <input id="email" type="email" required placeholder="Input a valid email-address" name="email"/>
+        </label>
+        <label id="number-label">Age:
+          <input id="number" type="number" min="18" max="58" placeholder="Age in numbers (18-58)" name="age"/>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>1. How much do you love cats?
+        <select id="dropdown" name="dropdown">
+            <option value="">(Choose one)</option>
+            <option value="1">I like cats.</option>
+            <option value="2">I love cats.</option>
+          </select>
+        </label>
+
+        <label id="radio">2. How many cats do you own?   
+          <label><input type="radio" name="radio-inp" class="radio" value="0"/> 0</label>
+          <label><input type="radio" name="radio-inp" class="radio" value="1"/> 1</label>
+          <label><input type="radio" name="radio-inp" class="radio" value="2"/> 2</label>
+          <label><input type="radio" name="radio-inp" class="radio" value="3"/> more</label>
+        </label>
+
+        <label id="checkbox">3. Which cat breed is the most cute?
+          <div id="mut-ans">(multiple answers possible)</div>
+            <div class="checkbox"><input type="checkbox" value="BS" name="bs"/> British shorthair</div>
+            <div class="checkbox"><input type="checkbox" value="B" name="b"/> Bombay</div>
+            <div class="checkbox"><input type="checkbox" value="O" name="o"/> Ocicat</div>
+            <div class="checkbox"><input type="checkbox" value="S" name="s"/> Siamese</div>
+            <div class="checkbox"><input type="checkbox" value="M" name="m"/> Maine Coon</div>
+            <div class="checkbox"><input type="checkbox" value="A" name="a"/> American Bobtail</div>
+            <div class="checkbox"><input type="checkbox" value="T" name="t"/> Turkish Angora</div>
+            <div class="checkbox"><input type="checkbox" value="R" name="r"/> Russian Blue</div>
+        </label>
+
+        <img scr="https://www.freepik.com/premium-vector/sketchy-cute-cat-breeds_835944.htm" width="200px" height="200px">
+        
+<label>Reasons why you love cats:
+          <textarea placeholder="Describe why you love cats in 200 words or less"></textarea max="200 words" class="textarea" rows="3" cols="30">
+        </label>      
+
+    <input id="submit" type="submit" value="Submit"/>
+  </form>
+</body>
+    
+    <footer>
+      <div>&copy Copyright Nina</div>
+        <span>For futher inquires or issues submitting the form, contact: wearenotavailable@email.com</span>
+    </footer>
+  
+</html>
